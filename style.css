@@ -1,0 +1,89 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background-color: #FAF1EE;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+  font-family: 'Quicksand', sans-serif;
+  background-image: url("assets/ocean-bg.jpg");
+  background-size: 100% 100%;
+}
+
+.description{
+  white-space: pre-wrap;
+}
+
+#currentDay{
+  font-weight: bold;
+}
+
+.time-block{
+  align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+}
+
+.form-control {
+  display: none;
+}
+
+.hour {
+  color: #000000;
+  border-top: 1px dashed #000000;
+  text-align: right;
+}
+
+.past {
+  background-color: #e7e3d5;
+  color: white;
+}
+
+.present {
+  background-color: #F4BF95;
+  color: white;
+}
+
+.future {
+  background-color: #d7dfae;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #265f94;
+  color: white;
+  
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+.penIcon{
+  max-width: 45%;
+  max-height: 45%;
+}
