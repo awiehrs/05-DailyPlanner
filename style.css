@@ -20,53 +20,58 @@ textarea{
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 7px solid black;
   font-family: 'Quicksand', sans-serif;
   background-image: url("assets/ocean-bg.jpg");
   background-size: 100% 100%;
-}
-
-.description{
-  white-space: pre-wrap;
+  
 }
 
 #currentDay{
   font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#newBtn {
+  align-items: center;
+}
+
+.clearBtn {
+  background-color: #aac1d6;
+  color: #494949;
+  border-radius: 4px;
+  border: 1px solid #748492;
+  font-size: 14px;
 }
 
 .time-block{
-  align: center;
+  /*align: center;*/
   border-radius: 15px;
 }
-
-.row {
-  white-space: pre-wrap;
-  height: 40px;
-  border-top: 1px solid white;;
-}
-
-
 
 .hour {
   color: #000000;
   border-top: 1px dashed #000000;
   text-align: right;
   float: left;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .past {
   background-color: #e7e3d5;
-  color: white;
+  color: #91b1bb;
 }
 
 .present {
   background-color: #F4D2BC;
-  color: white;
+  color: #5a5a5a;
+  font-weight: bold;
 }
 
 .future {
   background-color: #d7dfae;
-  color: white;
+  color: rgb(88, 88, 88);
 }
 
 .saveBtn {
@@ -84,12 +89,10 @@ textarea{
   
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+  background-color: #73857c;
 }
 
-.penIcon{
-  max-width: 45%;
-  max-height: 45%;
-}
+

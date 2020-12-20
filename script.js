@@ -1,6 +1,6 @@
- $(document).ready(function () {
+$(document).ready(function () {
      
-    var todayDisplay = moment().format('dddd[|] MMMM Do[,] YYYY');
+    var todayDisplay = moment().format('dddd[| ] MMMM Do[,] YYYY');
     console.log(todayDisplay)
     $("#currentDay").text(todayDisplay);
 
@@ -8,13 +8,23 @@
     console.log(currentTime)
 
     var timeSlot = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : {}
-
+    
     const date = new Date();
-    const hour = date.getHours();
+    let hour = date.getHours();
+    
 
     for (var i = 9; i < 18; i++) {
+        let j = i 
+        let timeType = "am"
+        if( j > 11 ){
+            timeType="pm"
+        }
+        if (j > 12){
+            j = j-12
+        }
         var timeDiv = $("<div>");
-        timeDiv.text(`${i}:00`);
+        const displayedTime =`${j}:00 ${timeType}`
+        timeDiv.text(displayedTime);
         timeDiv.addClass("col-md-1 hour");
         $("#timeTable").append(timeDiv);
     
@@ -32,5 +42,15 @@
         $("#timeTable").append(saveBtnDiv);
     }
 
+
+    $(".saveBtn").on("click", function(){
+        var id = $(this).attr("id");
+        var value = $(this).prev().val()
+        timeSlot[id] = value
+       localStorage.setItem('todos', JSON.stringify(timeSlot));
+       console.log(timeSlot);
+       console.log(value);
+    });   
+    
 
  });
