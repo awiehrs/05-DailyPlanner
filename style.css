@@ -1,8 +1,9 @@
+/*Styling for the entire page*/
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: #FAF1EE;
+  background-color: #f8ebe6;
 }
 
 textarea{
@@ -14,17 +15,18 @@ textarea{
   padding: 10px;
   float: left;
 }
-
+/* Jumbotron styling */
 .jumbotron {
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid rgb(61, 61, 61);
   font-family: 'Quicksand', sans-serif;
   background-image: url("assets/ocean-bg.jpg");
   background-size: 100% 100%;
-  
+  margin-bottom: 1rem;
+  padding: 2rem 2rem;
 }
 
 #currentDay{
@@ -32,19 +34,23 @@ textarea{
   letter-spacing: 2px;
 }
 
-#newBtn {
-  margin-left: 45%;
-}
-
 .clearBtn {
-  background-color: #aac1d6;
-  color: #494949;
+  background-color: #517597;
+  color: #d4d4d4;
   border-radius: 4px;
   border: 1px solid #748492;
   font-size: 16px;
   padding: 8px;
+  font-weight: bolder;
+  opacity: 0.8;
 }
 
+.clearBtn:hover {
+  opacity: 0.5;
+  transition: all .6s;
+}
+
+/* Main Content Styling */
 .time-block{
   border-radius: 15px;
 }

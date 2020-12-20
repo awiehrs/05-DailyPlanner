@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!--External styling-->
+    <!--External styling Linking-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -29,19 +29,19 @@
 
   <body>
     <!--Jumbotron - includes div with time display-->
-    <header class="jumbotron">
+    <header class="jumbotron" id="jumbo">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p><br>
       <p id="currentDay" class="lead"></p>
+      <p id="newBtn"><button class="clearBtn">Start New Day</button></p><br>
     </header>
 
     <!--Main Content-->
     <div class="container" id="timeTable">
-      <div id="newBtn" class="col-md-5"><button class="clearBtn">Start New Day</button></div><br>
       <!-- Time form goes here-->
     </div>
     
-
+    <!-- JavaScript sources-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
